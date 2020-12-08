@@ -1,0 +1,37 @@
+{
+  "name": "@telemetry-js/publisher-logzio-metrics",
+  "version": "0.2.0",
+  "description": "Publish metrics to Logz.io Metrics",
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "standard && hallmark && node test"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "dependencies": {
+    "bruce-millis": "^1.0.0",
+    "json-stable-stringify": "^1.0.1",
+    "on-stream-close": "^1.0.0",
+    "reusify": "^1.0.4"
+  },
+  "devDependencies": {
+    "@telemetry-js/metric": "^0.1.2",
+    "hallmark": "^3.1.0",
+    "standard": "^14.3.4",
+    "tape": "^4.9.1"
+  },
+  "repository": "telemetry-js/publisher-logzio-metrics",
+  "bugs": "https://github.com/telemetry-js/publisher-logzio-metrics/issues",
+  "homepage": "https://github.com/telemetry-js/publisher-logzio-metrics",
+  "keywords": [
+    "metrics",
+    "measurements",
+    "telemetry"
+  ],
+  "engines": {
+    "node": ">=8"
+  }
+}
