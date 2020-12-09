@@ -3,7 +3,7 @@
 > **Publish metrics to [Logz.io Metrics](https://docs.logz.io/user-guide/infrastructure-monitoring/custom-metrics).**  
 > A [`telemetry`](https://github.com/telemetry-js/telemetry) plugin.
 
-[![npm status](http://img.shields.io/npm/v/telemetry-js/publisher-logzio-metrics.svg)](https://www.npmjs.org/package/@telemetry-js/publisher-logzio-metrics)
+[![npm status](http://img.shields.io/npm/v/@telemetry-js/publisher-logzio-metrics.svg)](https://www.npmjs.org/package/@telemetry-js/publisher-logzio-metrics)
 [![node](https://img.shields.io/node/v/@telemetry-js/publisher-logzio-metrics.svg)](https://www.npmjs.org/package/@telemetry-js/publisher-logzio-metrics)
 [![Test](https://github.com/telemetry-js/publisher-logzio-metrics/workflows/Test/badge.svg?branch=main)](https://github.com/telemetry-js/publisher-logzio-metrics/actions)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -70,7 +70,7 @@ String, required. Secret token of Logz.io metrics account. Note that metrics acc
 
 Expected millisecond interval between repeated metrics. A number or string to be parsed by [`bruce-millis`](https://github.com/vweevers/bruce-millis), default is 1 second. Metrics are grouped by their time, rounded to the nearest multiple of `resolution`.
 
-If the resolution is too small then no grouping will occur, leading to inefficient documents. If the resolution is too large (i.e. more than your [schedule interval](../telemetry-schedule-simple) or [summarize window](../telemetry-processor-summarize)) then metrics - that have the same name and dimensions within that time window - will be overwritten, only sending the last value to Logz.io.
+If the resolution is too small then no grouping will occur, leading to inefficient documents. If the resolution is too large (i.e. more than your [schedule interval](https://github.com/telemetry-js/schedule-simple) or [summarize window](https://github.com/telemetry-js/processor-summarize)) then metrics - that have the same name and dimensions within that time window - will be overwritten, only sending the last value to Logz.io.
 
 ### `time`
 
@@ -102,7 +102,7 @@ npm install @telemetry-js/publisher-logzio-metrics
 
 ## Acknowledgements
 
-This project is kindly sponsored by [Reason Cybersecurity Inc](https://reasonsecurity.com).
+This project is kindly sponsored by [Reason Cybersecurity Ltd](https://reasonsecurity.com).
 
 [![reason logo](https://cdn.reasonsecurity.com/github-assets/reason_signature_logo.png)](https://reasonsecurity.com)
 
